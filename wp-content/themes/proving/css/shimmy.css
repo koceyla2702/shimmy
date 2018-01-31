@@ -1,0 +1,227 @@
+/* HEADER */
+
+@font-face {
+    font-family: DKLemonYellowSun;
+    src: url(../fonts/DKLemonYellowSun.otf);
+}
+
+body {
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-logo {
+    width: 80px;
+    height: 80px;
+}
+.header .nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .nav li {
+    display: inline-block;
+    text-align: center;
+}
+.header .nav li a {
+    color: #ff00a7;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.header .nav li.current-menu-item a {
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+}
+.header .nav li.current-menu-item a:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #00ffd6;
+    display: block;
+    position: absolute;
+}
+.header .basket {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .basket a {
+    color: #ff00a7;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* HERO */
+.hero {
+    background-color: #cdfff7;
+    width: 100%;
+    height: 422px;
+    padding: 36px 36px 0px 36px;
+}
+.hero.top:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid #cdfff7;
+    position: relative;
+    top: 71px;
+    left: 120px;
+}
+
+.hero h1 {
+    width: 313px;
+    font-family: DKLemonYellowSun;
+    font-size: 96px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: #00dbb8;
+    text-align: center;
+    word-spacing: -15px;
+}
+.hero h1 span {
+    font-size: 110px;
+    line-height: 104px;
+}
+h2 {
+    font-family: DKLemonYellowSun;
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #0f426f;
+}
+h3 {
+    font-family: DKLemonYellowSun;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff00a7;
+}
+.hero h2 {
+    width: 313px;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: 0.9px;
+    color: #00dbb8;
+}
+
+.hero.pink {
+    background-color: #fff0fa;
+    width: 60%;
+    float: right;
+    position: absolute;
+    right: 0;
+    height: auto;
+    padding: 0;
+}
+
+.hero.pink p {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0f426f;
+}
+.hero.pink .pink__content {
+    margin: 0 auto;
+    padding: 60px 15px 20px 40%;
+}
+.hero.pink .pink__content:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: relative;
+    border-top: 40px solid #fff0fa;
+    top: 78px;
+    left: 50%;
+    margin-left: -30px;
+}
+.hero.pink h2 {
+    width: auto;
+    font-size: 48px;
+    line-height: 1.13;
+    letter-spacing: 1.4px;
+    color: #ff00a7;
+    padding-top: 28px;
+}
+.bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    background-color: #ff00a7;
+    border-radius: 10px;
+}
+.family {
+    position: relative;
+    margin-top: 100px;
+}
+.family-picture {
+    float: left;
+    width: 60%;
+    z-index: 10;
+    position: relative;
+    top: 50px;
+    background-color: #ffb4e5;
+}
+
+.family-picture img {
+    position: relative;
+    top: -5px;
+    left: 8px;
+}
+
+.home__products {
+    clear: both;
+    padding-top: 100px;
+}
+.hide {
+    display: none;
+}
+.add {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    height: 68px;
+    background-color: #00ffd6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add span {
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0f426f;
+}
