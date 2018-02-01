@@ -423,21 +423,36 @@ h3 {
         float: none;
         position: relative;
     }
+    .hero.pink p {
+        font-size: 14px;
+    }
+    .hero.pink h2 {
+        font-size: 32px;
+    }
     .hero.pink .pink__content {
         padding: 30px;
+    }
+    .hero.pink .pink__content:after {
+        right: 50%;
+        transform: translateX(50%);
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 24px solid #fff0fa;
+        bottom: -24px;
     }
     .nav,
     .basket__text,
     .family-picture {
         display: none !important;
     }
-    .hero.pink h2 {
-        font-size: 32px;
-    }
+
     .basket__count {
         right: 20px !important;
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
+    }
+    h2 {
+        font-size: 32px;
     }
 }

@@ -752,7 +752,6 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 5%;
 }
 .service .icons {
-    padding-bottom: 30px;
 }
 .banner {
     max-width: 2000px;
@@ -1399,7 +1398,7 @@ textarea:focus:-ms-input-placeholder {
     }
     .home .icons li {
         margin-right: 0%;
-        margin-bottom: 45px;
+        margin-bottom: -20px;
         width: 100%;
     }
     .prod-right {
@@ -1429,7 +1428,6 @@ textarea:focus:-ms-input-placeholder {
         width: 100%;
     }
     .icons {
-        padding: 55px 0 35px;
     }
     .partners-left {
         float: left;
