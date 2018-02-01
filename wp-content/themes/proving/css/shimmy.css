@@ -7,6 +7,12 @@
 
 body {
     padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif !important;
+}
+p {
+    font-family: 'Exo 2', sans-serif !important;
 }
 
 .header {
@@ -31,34 +37,86 @@ body {
     text-align: center;
 }
 .header .nav li a {
+    font-family: 'Exo 2';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: 3px;
     color: #ff00a7;
     text-transform: uppercase;
-    font-weight: normal;
+}
+.header .nav li a:hover {
+    font-weight: bold;
 }
 .header .nav li.current-menu-item a {
     font-weight: bold;
     position: relative;
     padding: 0;
 }
-.header .nav li.current-menu-item a:after {
+.header .nav li a:hover::after {
     content: '';
     width: 100%;
     height: 4px;
     background-color: #00ffd6;
     display: block;
     position: absolute;
+    bottom: -9px;
+}
+.header .nav li.current-menu-item a::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #00ffd6;
+    display: block;
+    position: absolute;
+    bottom: -9px;
 }
 .header .basket {
-    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.header .basket__count {
+    height: 48px;
+    width: 48px;
+    background-color: #00ffd6;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    font-family: 'Exo 2';
+    font-size: 16px;
+    font-weight: 900;
+    color: #4a4a4a;
+}
 .header .basket a {
+    font-family: 'Exo 2';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: 3px;
     color: #ff00a7;
     text-transform: uppercase;
-    font-weight: normal;
+}
+
+#click-menu {
+    left: 5% !important;
+    right: auto !important;
+}
+#click-menu .threeLines .line {
+    background: #ff00a7 !important;
+    height: 2px !important;
+    width: 27px !important;
+}
+
+#click-menu.admin-bar-showing {
+    margin-top: 27px !important;
 }
 
 /* HERO */
@@ -67,7 +125,17 @@ body {
     width: 100%;
     height: 422px;
     padding: 36px 36px 0px 36px;
+    background-image: url(/wp-content/themes/proving/img/pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    position: relative;
 }
+.hero-blue__content {
+    float: left;
+    padding-left: 60px;
+    width: 40%;
+}
+
 .hero.top:after {
     content: '';
     width: 0;
@@ -75,13 +143,17 @@ body {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-top: 40px solid #cdfff7;
-    position: relative;
-    top: 71px;
-    left: 120px;
+    position: absolute;
+    bottom: -40px;
+    left: 22%;
+}
+.swiggle {
+    clear: both;
+    display: block;
+    margin: 0 auto 4px auto;
 }
 
 .hero h1 {
-    width: 313px;
     font-family: DKLemonYellowSun;
     font-size: 96px;
     font-weight: normal;
@@ -93,6 +165,8 @@ body {
     color: #00dbb8;
     text-align: center;
     word-spacing: -15px;
+    margin-bottom: -6px;
+    margin-top: 4px;
 }
 .hero h1 span {
     font-size: 110px;
@@ -121,7 +195,6 @@ h3 {
     color: #ff00a7;
 }
 .hero h2 {
-    width: 313px;
     font-size: 32px;
     line-height: 1.13;
     letter-spacing: 0.9px;
@@ -130,6 +203,7 @@ h3 {
 
 .hero.pink {
     background-color: #fff0fa;
+    background-image: none;
     width: 60%;
     float: right;
     position: absolute;
@@ -150,7 +224,8 @@ h3 {
 }
 .hero.pink .pink__content {
     margin: 0 auto;
-    padding: 60px 15px 20px 40%;
+    padding: 63px 15px 40px 40%;
+    position: relative;
 }
 .hero.pink .pink__content:after {
     content: '';
@@ -158,10 +233,10 @@ h3 {
     height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    position: relative;
+    position: absolute;
     border-top: 40px solid #fff0fa;
-    top: 78px;
-    left: 50%;
+    bottom: -40px;
+    right: 26%;
     margin-left: -30px;
 }
 .hero.pink h2 {
@@ -181,7 +256,7 @@ h3 {
 }
 .family {
     position: relative;
-    margin-top: 100px;
+    margin-top: 162px;
 }
 .family-picture {
     float: left;
@@ -200,13 +275,41 @@ h3 {
 
 .home__products {
     clear: both;
-    padding-top: 100px;
+    padding-top: 110px;
+}
+
+.home__products h2 {
+    margin-bottom: 0;
+}
+.home__products h3 {
+    margin-top: -30px;
+    margin-bottom: 12px;
+}
+.home__products .product__info {
+    height: 44px;
+}
+
+.home__products .product__info p {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: #bfbfbf;
+    padding: 0;
+    margin: 0;
 }
 .hide {
     display: none;
 }
 .add {
     width: 100%;
+    max-width: 262px;
+    margin: 0 auto;
     display: block;
     font-weight: bold;
     height: 68px;
@@ -224,4 +327,117 @@ h3 {
     letter-spacing: 2px;
     text-align: center;
     color: #0f426f;
+    font-family: 'Exo 2', sans-serif !important;
+}
+
+/* FOOTER */
+.footer-inner {
+    display: flex;
+    padding: 24px 120px 24px 120px !important;
+}
+.footer-left {
+    flex: 1;
+}
+.footer-left ul {
+    column-count: 2;
+    margin-bottom: -20px;
+}
+.footer-left ul li {
+    padding-bottom: 20px;
+}
+.footer-left ul li a {
+    font-family: 'Exo 2';
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #ffffff;
+}
+.footer-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -30px;
+}
+.social-link {
+    margin-right: 30px;
+}
+.logo-white {
+    width: 86px;
+    height: 85px;
+}
+
+@media screen and (min-width: 800px) {
+    .hero__image {
+        max-width: 560px;
+        float: right;
+        position: relative;
+        top: 50px;
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+    .header {
+        height: 80px;
+        position: relative;
+    }
+    .header .header-logo {
+        width: 62px;
+        height: 62px;
+    }
+    .hero {
+        background-image: none;
+    }
+    .hero h1 {
+        font-size: 55px;
+        letter-spacing: 0.9px;
+        word-spacing: -5px;
+    }
+    .hero h1 span {
+        font-size: 68px;
+        line-height: 1;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+    .hero-blue__content {
+        width: 100%;
+        padding-left: 0;
+    }
+    .swiggle {
+        width: 24px;
+    }
+    .hero.top:after {
+        display: none;
+    }
+    .hero.pink {
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+    .hero.pink .pink__content {
+        padding: 30px;
+    }
+    .nav,
+    .basket__text,
+    .family-picture {
+        display: none !important;
+    }
+    .hero.pink h2 {
+        font-size: 32px;
+    }
+    .basket__count {
+        right: 20px !important;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
 }

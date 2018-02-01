@@ -13,22 +13,33 @@
 
 
 	</div><!-- #content -->
+	<?php if(is_page_template('homepage.php') || is_page_template('contact.php')) {?>
+	<div class="parallax">
+		<div class="container">
+			<!-- <div class="contact-footer">
+				<div class="contact-title">
+					<?php dynamic_sidebar('contact_title') ?>
+				</div>
+
+				<div class="f-contact-left">
+					<?php dynamic_sidebar('contact-left') ?>
+				</div>
+				<div class="f-contact-right">
+					<?php dynamic_sidebar('contact-right') ?>
+				</div>
+				<div class="clear"></div>
+			</div> -->
+		</div>
+	</div>
+	<?php } ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="footer-inner">
-				<div class="footer-left">
-					<?php wp_nav_menu( array('menu_id' => '43' ) ); ?>
+				<div class="footers">
+					<p>&copy; <?php echo date("Y");?> Shimmy Shimmy Coconut  |  Terms of Service  |  Privacy  |  <a href="http://www.shimmyshimmycoconut.co.uk/contact/">Contact Us</a></p>
 				</div>
-				<img class="logo-white" src="/wp-content/themes/proving/img/logo-white.png"/>
-				<!-- <p>&copy; <?php echo date("Y");?> Shimmy Shimmy Coconut  |  Terms of Service  |  Privacy  |  <a href="http://www.shimmyshimmycoconut.co.uk/contact/">Contact Us</a></p> -->
-				<div class="footer-right">
-						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/facebook.svg"/></a>
-						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/twitter.svg"/></a>
-						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/instagram.svg"/></a>
-						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/snapchat.svg"/></a>
-					
-				</div>
+				<div class="clear"></div>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

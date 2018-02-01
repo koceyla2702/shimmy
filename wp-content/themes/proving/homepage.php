@@ -23,13 +23,17 @@ get_header(); ?>
 
 
 			<div class="hero top">
-				<h1>Meet the <span>Shimmys</span></h1>
-				<h2>Crazy good for you<br>inside and out</h2>
+				<div class="hero-blue__content">
+					<h1>Meet the <span><br/>Shimmys</span></h1>
+					<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg"/>
+					<h2>Crazy good for you<br>inside and out</h2>
+				</div>
+				<img class="hero__image" src="/wp-content/themes/proving/img/shimmy-products.png"/>
 			</div>
 
 			<div class="family">
 				<div class="family-picture">
-					<img src="<?php echo esc_url( home_url('/')) ?>wp-content/themes/proving/img/shimmy.jpg"/>
+					<img src="<?php echo esc_url( home_url('/')) ?>wp-content/themes/proving/img/family-pic.jpg"/>
 				</div>
 
 				<div class="hero pink">
@@ -51,6 +55,7 @@ get_header(); ?>
 
 		<div class="home__products">
 			<h2>Our shimmy products</h2>
+			<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg"/>
 			<div class="container">
 				<div class="icons">
 					<ul>
@@ -60,7 +65,8 @@ get_header(); ?>
 								$link = get_field('service_link_' . $value);
 								$image = get_field('service_img_' . $value);
 								$title = get_field('service_title_' . $value);
-								echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
+								$info = get_field('service_content_' . $value);
+								echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
 							}
 							?>
 					</ul>
