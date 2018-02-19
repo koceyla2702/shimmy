@@ -26,6 +26,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="inner-title">
 				<h1><?php echo get_the_title(); ?></h1>
+                <img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg">
 			</div>
 		</div>
 	</div>
@@ -37,7 +38,8 @@ get_header(); ?>
 					<div class="faq-1 faq">
 						<div class="question q1">
 							<div class="q-left">
-								<?php the_field('question_1') ?>
+								<h2><?php the_field('question_1') ?></h2>
+                            </h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -51,7 +53,7 @@ get_header(); ?>
 					<div class="faq-2 faq">
 						<div class="question q2">
 							<div class="q-left">
-								<?php the_field('question_2') ?>
+								<h2><?php the_field('question_2') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -65,7 +67,7 @@ get_header(); ?>
 					<div class="faq-3 faq">
 						<div class="question q3">
 							<div class="q-left">
-								<?php the_field('question_3') ?>
+								<h2><?php the_field('question_3') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -79,7 +81,7 @@ get_header(); ?>
 					<div class="faq-4 faq">
 						<div class="question q4">
 							<div class="q-left">
-								<?php the_field('question_4') ?>
+								<h2><?php the_field('question_4') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -93,7 +95,7 @@ get_header(); ?>
 					<div class="faq-5 faq">
 						<div class="question q5">
 							<div class="q-left">
-								<?php the_field('question_5') ?>
+								<h2><?php the_field('question_5') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -107,7 +109,7 @@ get_header(); ?>
           <div class="faq-6 faq">
 						<div class="question q6">
 							<div class="q-left">
-								<?php the_field('question_6') ?>
+								<h2><?php the_field('question_6') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -121,7 +123,7 @@ get_header(); ?>
          <div class="faq-7 faq">
 						<div class="question q7">
 							<div class="q-left">
-								<?php the_field('question_7') ?>
+								<h2><?php the_field('question_7') ?></h2>
 							</div>
 							<div class="q-right opener">
 								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -135,7 +137,7 @@ get_header(); ?>
           <div class="faq-8 faq">
  						<div class="question q8">
  							<div class="q-left">
- 								<?php the_field('question_8') ?>
+ 								<h2><?php the_field('question_8') ?></h2>
  							</div>
  							<div class="q-right opener">
  								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -149,7 +151,7 @@ get_header(); ?>
           <div class="faq-9 faq">
  						<div class="question q9">
  							<div class="q-left">
- 								<?php the_field('question_9') ?>
+ 								<h2><?php the_field('question_9') ?></h2>
  							</div>
  							<div class="q-right opener">
  								<i class="fa fa-plus" aria-hidden="true"></i>
@@ -163,7 +165,7 @@ get_header(); ?>
           <div class="faq-10 faq">
             <div class="question q10">
               <div class="q-left">
-                <?php the_field('question_10') ?>
+                <h2><?php the_field('question_10') ?></h2>
               </div>
               <div class="q-right opener">
                 <i class="fa fa-plus" aria-hidden="true"></i>
@@ -177,7 +179,7 @@ get_header(); ?>
           <div class="faq-11 faq">
             <div class="question q11">
               <div class="q-left">
-                <?php the_field('question_11') ?>
+                <h2><?php the_field('question_11') ?></h2>
               </div>
               <div class="q-right opener">
                 <i class="fa fa-plus" aria-hidden="true"></i>

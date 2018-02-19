@@ -31,7 +31,7 @@ get_header(); ?>
 				<img class="hero__image" src="/wp-content/themes/proving/img/shimmy-products.png"/>
 			</div>
 
-			<div class="family">
+			<!-- <div class="family">
 				<div class="family-picture">
 					<img src="<?php echo esc_url( home_url('/')) ?>wp-content/themes/proving/img/family-pic.jpg"/>
 				</div>
@@ -46,7 +46,17 @@ get_header(); ?>
 						<h2>Gluten free,<br>dairy free</h2>
 					</div>
 				</div>
+			</div> -->
+
+			<div class="home__info pink">
+				<span class="pink-title">RAW, KEFIR,<br/>PROBIOTIC PRODUCTS</span>
+				<img class="swiggle-blue" src="/wp-content/themes/proving/img/swiggle-blue.svg"/>
+				<span class="pink-title">GLUTEN AND<br/>DAIRY FREE</span>
+				<img class="swiggle-blue" src="/wp-content/themes/proving/img/swiggle-blue.svg"/>
+				<span class="pink-title">FRESHLY MADE<br/>IN SMALL BATCHES</span>
 			</div>
+
+
 
 
 
@@ -72,7 +82,26 @@ get_header(); ?>
 					</ul>
 				</div>
 			</div>
+			<br class="clearfix"/>
 		</div>
+
+		<div class="content-block pink">
+			<h3>WHAT IS KEFIR?</h3>
+			<p>A health food, kefir contains many probiotic, bioactive compounds and as many as 30 strains of good bacteria that can help fight against illness, bacteria, carcinogens and more. It is a delicious, tangy drink often made with kefir grains and fermented milk.</p>
+		</div>
+
+		<div class="content-block teal">
+			<h3>WHY ARE WE DIFFERENT?</h3>
+			<p>Shimmy Shimmy Coconut produces kefir made with fresh young coconut water/meat fermented in a warm environment with good bacteria to create super high level probiotic products that are fantastic for the gut and wellbeing of the body.<br/>  They are lactose and gluten free – no dairy or grains used.</p>
+		</div>
+
+		<div class="content-block pink">
+			<h3>WHAT ARE THE BENEFITS?</h3>
+			<p>Coconut kefir water and yoghurt supplies your gut with really beneficial bacteria that improve your immune system, digestive system and can help fight infection.</p>
+			<p>There are billions of “gut-friendly” bacteria in every bottle and jar, containing vitamins  B & C, Omega 3 & 6, magnesium, potassium, calcium and iron.</p>
+			<p>It aids the breakdown and removal of harmful toxins and supports cell regeneration.</p>
+		</div>
+
 	</div><!-- #primary -->
 
 <?php

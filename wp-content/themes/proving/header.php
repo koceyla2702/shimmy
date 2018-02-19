@@ -57,7 +57,7 @@ ga('create', 'UA-76749313-1', 'auto');
         </div>
         <div class="basket">
             <a class="basket__text" href="<?php echo esc_url( home_url('/')) ?>basket">Basket</a>
-            <a href="<?php echo esc_url( home_url('/')) ?>"><div class="basket__count"><?php echo WC()->cart->get_cart_contents_count(); ?></div></a>
+            <a href="<?php echo esc_url( home_url('/')) ?>basket"><div class="basket__count"><?php echo WC()->cart->get_cart_contents_count(); ?></div></a>
         </div>
     </header>
 

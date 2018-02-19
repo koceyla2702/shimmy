@@ -30,9 +30,10 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="white-bg">
-					<div class="container">
+					<!-- <div class="container">
 						<div class="other-title">
-							<h3>Other Products</h3>
+							<h2>We have plenty more</h2>
+							<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg">
 						</div>
 						<div class="rel-product-holder">
 							<div class="rel-prod rel-1">
@@ -49,7 +50,24 @@ get_header(); ?>
 							</div>
 							<div class="clear"></div>
 						</div>
+					</div> -->
+
+					<div class="home__products related-products">
+						<h2>We have plenty more</h2>
+						<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg"/>
+						<div class="container max-width-800">
+							<div class="icons">
+								<ul>
+									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_1') ?>'><img src='<?php echo get_field('related_product_1') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_1') ?></h3><a class='add' href='$url'><span>+ ADD</span></a></div></li>
+									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_2') ?>'><img src='<?php echo get_field('related_product_2') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_2') ?></h3><a class='add' href='$url'><span>+ ADD</span></a></div></li>
+
+
+								</ul>
+							</div>
+						</div>
+						<br class="clearfix"/>
 					</div>
+
 				</div>
 			<?php } else { ?>
 				<div class="container">

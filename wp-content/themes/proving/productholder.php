@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Holder 
+ * Template Name: Product Holder
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -18,11 +18,11 @@ get_header(); ?>
 
 	<div class="home">
 		<!-- <div class="banner">
-			<img src="<?php echo get_field('product_range_img') ?>" />			
+			<img src="<?php echo get_field('product_range_img') ?>" />
 		</div> -->
 
 
-<ul class="products">
+<!-- <ul class="products">
 	<?php
 		$args = array(
 			'post_type' => 'product',
@@ -39,6 +39,28 @@ get_header(); ?>
 		wp_reset_postdata();
 	?>
 </ul><!--/.products-->
+
+<div class="home__products">
+	<h2>Our shimmy products</h2>
+	<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg"/>
+	<div class="container">
+		<div class="icons">
+			<ul>
+				<?php
+					$arr = array(1, 2, 3);
+					foreach ($arr as &$value) {
+						$link = "/" . get_field('service_link_' . $value, 2);
+						$image = get_field('service_img_' . $value, 2);
+						$title = get_field('service_title_' . $value, 2);
+						$info = get_field('service_content_' . $value, 2);
+						echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
+					}
+					?>
+			</ul>
+		</div>
+	</div>
+	<br class="clearfix"/>
+</div>
 
 <br style="clear: both;"/><br style="clear: both;"/>
 

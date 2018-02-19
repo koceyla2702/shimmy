@@ -9,7 +9,7 @@
 
 ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1><img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg">' ); ?>
 
 		<?php
 			the_content();
@@ -19,4 +19,3 @@
 				'after'  => '</div>',
 			) );
 		?>
- 

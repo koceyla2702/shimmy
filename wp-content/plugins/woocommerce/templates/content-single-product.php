@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 		<div class="clear"></div>
-		<div class="benefits">
+		<!-- <div class="benefits">
 			<div class="title">
 				<div class="title-left">Benefits</div>
 				<div class="opener"><i class="fa fa-plus" aria-hidden="true"></i></div>
@@ -91,9 +91,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="hidden-content">
 				<?php the_field('more_info') ?>
 			</div>
-		</div>
+		</div> -->
 	</div><!-- .summary -->
-	
+
 	<?php
 		/**
 		 * woocommerce_before_single_product_summary hook.
@@ -104,7 +104,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	
+
 
 	<?php
 		/**
