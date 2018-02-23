@@ -563,16 +563,6 @@ textarea:focus:-ms-input-placeholder {
 .image_top {
     overflow: hidden;
 }
-.icons li img {
-    margin: 0 auto;
-    display: block;
-    transform: scale(0.8);
-    transition: transform 0.1s ease-in-out;
-    width: 100%;
-}
-.icons li img:hover {
-    transform: scale(0.9) rotate(-10deg);
-}
 
 .home-left {
     float: left;
@@ -1658,9 +1648,6 @@ i.fa.fa-shopping-basket {
 
 .gluten-free img {
     width: 500px;
-}
-#click-menu {
-    top: 29px !important;
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;

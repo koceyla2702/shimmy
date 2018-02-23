@@ -38,7 +38,30 @@ get_header(); ?>
 		}
 		wp_reset_postdata();
 	?>
-</ul><!--/.products-->
+</ul> -->
+<!--/.products-->
+
+<!-- <div class="home__products">
+	<h2>Our shimmy products</h2>
+	<img class="swiggle" src="/wp-content/themes/proving/img/swiggle.svg"/>
+	<div class="container">
+		<div class="icons">
+			<ul>
+				<?php
+					$arr = array(1, 2, 3);
+					foreach ($arr as &$value) {
+						$link = "/" . get_field('service_link_' . $value, 2);
+						$image = get_field('service_img_' . $value, 2);
+						$title = get_field('service_title_' . $value, 2);
+						$info = get_field('service_content_' . $value, 2);
+						echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
+					}
+					?>
+			</ul>
+		</div>
+	</div>
+	<br class="clearfix"/>
+</div> -->
 
 <div class="home__products">
 	<h2>Our shimmy products</h2>
@@ -53,7 +76,7 @@ get_header(); ?>
 						$image = get_field('service_img_' . $value, 2);
 						$title = get_field('service_title_' . $value, 2);
 						$info = get_field('service_content_' . $value, 2);
-						echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
+						echo "<li><div class='image_top'><a class='home__products--link' href='$link'><div class='home__products--background'></div><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$link'><span>READ MORE</span></a></div></li>";
 					}
 					?>
 			</ul>

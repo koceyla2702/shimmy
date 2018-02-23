@@ -25,9 +25,9 @@
 				<div class="footer-right">
 						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/facebook.svg"/></a>
 						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/twitter.svg"/></a>
-						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/instagram.svg"/></a>
+						<a class="social-link" target="_blank" href="https://www.instagram.com/theshimmyshimmyco/"><img src="/wp-content/themes/proving/img/instagram.svg"/></a>
 						<a class="social-link" href=""><img src="/wp-content/themes/proving/img/snapchat.svg"/></a>
-					
+
 				</div>
 			</div>
 		</div><!-- .site-info -->

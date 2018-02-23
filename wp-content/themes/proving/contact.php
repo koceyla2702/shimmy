@@ -15,11 +15,11 @@
 get_header(); ?>
 
 	<div class="light-green-bg">
-		<!-- <div class="container">
+		<div class="container">
 			<div class="inner-title">
 				<h1><?php echo get_the_title(); ?></h1>
 			</div>
-		</div> -->
+		</div>
 	</div>
 	<div class="container">
 		<?php the_content(); ?>

@@ -76,7 +76,7 @@ get_header(); ?>
 								$image = get_field('service_img_' . $value);
 								$title = get_field('service_title_' . $value);
 								$info = get_field('service_content_' . $value);
-								echo "<li><div class='image_top'><a href='$link'><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$url'><span>+ ADD</span></a></div></li>";
+								echo "<li><div class='image_top'><a class='home__products--link' href='$link'><div class='home__products--background'></div><img src='$image'/></a></div><div class='icon_content'><h3>$title</h3><div class='product__info'>$info</div><a class='add' href='$link'><span>READ MORE</span></a></div></li>";
 							}
 							?>
 					</ul>
