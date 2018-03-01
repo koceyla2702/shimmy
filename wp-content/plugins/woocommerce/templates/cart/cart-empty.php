@@ -32,7 +32,7 @@ wc_print_notices();
 
 <?php if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
 	<p class="return-to-shop">
-		<a class="button wc-backward" href="http://www.shimmyshimmycoconut.co.uk/our-products/">
+		<a class="button wc-backward" href="/our-products/">
 			<?php _e( 'Return To Shop', 'woocommerce' ) ?>
 		</a>
 	</p>

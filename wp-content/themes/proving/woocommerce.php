@@ -58,8 +58,8 @@ get_header(); ?>
 						<div class="container max-width-800">
 							<div class="icons">
 								<ul>
-									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_1') ?>'><img src='<?php echo get_field('related_product_1') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_1') ?></h3><a class='add' href='$url'><span>+ ADD</span></a></div></li>
-									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_2') ?>'><img src='<?php echo get_field('related_product_2') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_2') ?></h3><a class='add' href='$url'><span>+ ADD</span></a></div></li>
+									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_1') ?>'><img src='<?php echo get_field('related_product_1') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_1') ?></h3><a class='add' href='<?php echo the_field('related_product_link_1') ?>'><span>+ ADD</span></a></div></li>
+									<li><div class='image_top'><a href='<?php echo the_field('related_product_link_2') ?>'><img src='<?php echo get_field('related_product_2') ?>'/></a></div><div class='icon_content'><h3><?php the_field('related_product_title_2') ?></h3><a class='add' href='<?php echo the_field('related_product_link_2') ?>'><span>+ ADD</span></a></div></li>
 
 
 								</ul>
